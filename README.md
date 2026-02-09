@@ -5,43 +5,6 @@
 - Analyze Breast Cancer dataset and apply feature scaling using StandardScaler.
 - Build KNN classifiers to predict the respective classes.
 
-## Data Dictionary 
-
-| Column Name             | Description |
-| ----------------------- | ----------- |
-| ID                      |             |
-| Diagnosis               |             |
-| radius_mean             |             |
-| texture_mean            |             |
-| perimeter_mean          |             |
-| area_mean               |             |
-| smoothness_mean         |             |
-| compactness_mean        |             |
-| concavity_mean          |             |
-| concave points_mean     |             |
-| symmetry_mean           |             |
-| fractal_dimension_mean  |             |
-| radius_se               |             |
-| texture_se              |             |
-| perimeter_se            |             |
-| area_se                 |             |
-| smoothness_se           |             |
-| compactness_se          |             |
-| concavity_se            |             |
-| concave points_se       |             |
-| symmetry_se             |             |
-| fractal_dimension_se    |             |
-| radius_worst            |             |
-| texture_worst           |             |
-| perimeter_worst         |             |
-| area_worst              |             |
-| smoothness_worst        |             |
-| compactness_worst       |             |
-| concavity_worst         |             |
-| concave points_worst    |             |
-| symmetry_worst          |             |
-| fractal_dimension_worst |             |
-| Unnamed: 32             |             |
 
 ## Summary 
 
@@ -55,10 +18,27 @@ Include key visualization that highlight and uncover key insight.
 
 #### Visualization 1:
 
+This vionplot suggest that `1 = Malignant` and `0 = Benign`, that benign have a wider axis and malignant have a larger sharpe, suggestion that malignant tumors tend to have larger worst case scenario.
 
-#### Visualization 2:
+![pairplot](/images/pairplot.png)
 
 
+
+## Models Scores
+
+| Model                            | Traing Score | Testing Score |
+| -------------------------------- | ------------ | ------------- |
+| KNeighbors Regressor             | 0.86         | 0.87          |
+| Hist Gradient Boosting Regressor | 0.92         | 0.85          |
+| Random Forest Regressor          | 0.96         | 0.84          |
+
+
+As you can the `Hist Gradient Regressor` did very well in the training but came it second place when testing. 
+`Random Forest Regressor`also did excellent, but came in third place. This does lead me to believe overfitting might have occur.
+So fine-tuning the models more may be a good idea.
+In the future I would like to try more models and see if I can get the model score higher.
 
 ## Conclusions/ Recommendations
+
+
 

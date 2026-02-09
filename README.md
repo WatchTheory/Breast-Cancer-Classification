@@ -3,7 +3,7 @@
 
 ## Problem 
 - Analyze Breast Cancer dataset and apply feature scaling using StandardScaler.
-- Build KNN classifiers to predict the respective classes.
+- Build KNN Model to predict the respective classes.
 
 
 ## Summary 

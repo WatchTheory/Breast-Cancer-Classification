@@ -38,7 +38,7 @@ As you can the `Hist Gradient Regressor` did very well in the training but came 
 So fine-tuning the models more may be a good idea.
 In the future I would like to try more models and see if I can get the model score higher.
 
-## Conclusions/ Recommendations
+
 
 
 
